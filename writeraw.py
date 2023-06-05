@@ -7,7 +7,7 @@ class DFRaw:
         if arg is None:
             self.file.write("\n[" + token + "]")
         else:
-            self.file.write("\n[" + token + ":" + arg + "]")
+            self.file.write("\n[" + token + ":" + str(arg) + "]")
 
     def finishraw(self):
         self.file.close()
